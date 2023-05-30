@@ -64,13 +64,13 @@ You will see the virtual environment name (e.g., "spotify-env") in your command 
 1. Clone this repository to your local machine.
 
 ```bash
-git clone
+git clone https://github.com/its-ag/get-spotify-refresh-token
 ```
 
 2. Navigate to the project directory.
 
 ```bash
-cd
+cd get-spotify-refresh-token
 ```
 
 3. Install the required dependencies.
