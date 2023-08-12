@@ -29,18 +29,18 @@ Open a command prompt or terminal.
 
 1. Navigate to the directory where you want to create the virtual environment.
 
-2. Run the following command to create a new virtual environment named "spotify-env":
+2. Run the following command to create a new virtual environment named "env":
 
 - For Windows:
 
 ```powershell
-python -m venv spotify-env
+python -m venv env
 ```
 
 - For macOS/Linux:
 
 ```bash
-python3 -m venv spotify-env
+python3 -m venv env
 ```
 
 3. Activate the virtual environment:
@@ -48,23 +48,23 @@ python3 -m venv spotify-env
 For Windows:
 
 ```
-.\spotify-env\Scripts\activate
+.\env\Scripts\activate
 ```
 
 For macOS/Linux:
 
 ```bash
-source spotify-env/bin/activate
+source env/bin/activate
 ```
 
-You will see the virtual environment name (e.g., "spotify-env") in your command prompt or terminal.
+You will see the virtual environment name (e.g., "env") in your command prompt or terminal.
 
 ## Step 3: Clone this repository
 
 1. Clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/its-ag/get-spotify-refresh-token
+git clone https://github.com/arnvgh/get-spotify-refresh-token.git
 ```
 
 2. Navigate to the project directory.
@@ -81,21 +81,13 @@ pip install -r requirements.txt
 
 ## Step 4: Create a .env file
 
-1. Create a .env file in the project directory. (either manually or by below command)
+1. Copy the given `.env.example` into `.env`
 
 ```bash
-touch .env
+cp .env.example .env
 ```
 
-2. Open the .env file and add the following lines:
-
-```bash
-SPOTIPY_CLIENT_ID=your_client_id
-SPOTIPY_CLIENT_SECRET=your_client_secret
-SPOTIPY_REDIRECT_URI=http://localhost:8888
-```
-
-3. Replace the values of `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET` with the values you noted down in Step 1.
+2. Replace the values of `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` with the values you noted down in Step 1.
 
 ## Step 5: Run the script
 
@@ -119,7 +111,7 @@ python3 get_refresh_token.py
 
 4. You will see a new file named `.cache` in the project directory. This file contains your refresh token (also an access token with expiration time).
 
-Congratulations! You have successfully stored your Spotify refresh token using Spotipy. Now you can use this token to access the Spotify API on behalf of the authenticated user.
+Congratulations! You have successfully stored your Spotify refresh token. Now you can use this token to access the Spotify API on behalf of the authenticated user.
 
 Please note that it's important to keep the .env file containing your credentials and the .cache file secure and not share them with others.
 

@@ -7,8 +7,8 @@ sp = spotipy.Spotify(
     auth_manager=spotipy.oauth2.SpotifyOAuth(
         client_id=config["SPOTIFY_CLIENT_ID"],
         client_secret=config["SPOTIFY_CLIENT_SECRET"],
-        redirect_uri=config["SPOTIPY_REDIRECT_URI"],
-        scope="playlist-modify-private",
+        redirect_uri=config["SPOTIFY_REDIRECT_URI"],
+        scope="user-read-currently-playing",
     )
 )
 
