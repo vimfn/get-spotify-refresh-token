@@ -5,8 +5,8 @@ config = dotenv_values(".env")
 
 sp = spotipy.Spotify(
     auth_manager=spotipy.oauth2.SpotifyOAuth(
-        client_id=config["SPOTIFY_CLIENT_ID"],
-        client_secret=config["SPOTIFY_CLIENT_SECRET"],
+        client_id=config["SPOTIPY_CLIENT_ID"],
+        client_secret=config["SPOTIPY_CLIENT_SECRET"],
         redirect_uri=config["SPOTIPY_REDIRECT_URI"],
         scope="playlist-modify-private",
     )
