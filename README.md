@@ -106,7 +106,7 @@ SPOTIFY_REDIRECT_URI=http://localhost:8888
 - For Windows:
 
 ```powershell
-python get_refresh_token.py
+python main.py
 ```
 
 - For macOS/Linux:
