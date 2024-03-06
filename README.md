@@ -64,7 +64,7 @@ You will see the virtual environment name (e.g., "spotify-env") in your command 
 1. Clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/its-ag/get-spotify-refresh-token
+git clone https://github.com/arnvgh/get-spotify-refresh-token
 ```
 
 2. Navigate to the project directory.
@@ -90,10 +90,12 @@ touch .env
 2. Open the .env file and add the following lines:
 
 ```bash
-SPOTIPY_CLIENT_ID=your_client_id
-SPOTIPY_CLIENT_SECRET=your_client_secret
-SPOTIPY_REDIRECT_URI=http://localhost:8888
+SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret
+SPOTIFY_REDIRECT_URI=http://localhost:8888
 ```
+
+(Make sure that you have port `:8888` avaiable in your system.)
 
 3. Replace the values of `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET` with the values you noted down in Step 1.
 
@@ -110,7 +112,7 @@ python get_refresh_token.py
 - For macOS/Linux:
 
 ```bash
-python3 get_refresh_token.py
+python3 main.py
 ```
 
 2. You will be redirected to a Spotify authorization page. Click on Agree to authorize the app.

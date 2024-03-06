@@ -1,0 +1,2 @@
+ - Add some error handling.
+ - Possible turn it into a github gist than a repo. (??)
