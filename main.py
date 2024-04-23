@@ -17,4 +17,4 @@ current_user = sp.current_user()
 
 assert current_user is not None
 
-print(current_user["id"], "token saved in '.cache' folder.")
+print(current_user["id"], "token saved in '.cache' file.")
